@@ -13,8 +13,8 @@ echo "Cloning Sources"
 git clone https://github.com/AdarshGrewal/android_kernel_xiaomi_sweet.git -b lineage-18.1 && cd android_kernel_xiaomi_sweet
 
 echo "copying necessary files"
-cp kernel_setup.sh /android_kernel_xiaomi_sweet/kernel_setup.sh
-cp kernel_build.sh /android_kernel_xiaomi_sweet/kernel_build.sh
+sudo cp kernel_setup.sh /android_kernel_xiaomi_sweet/kernel_setup.sh
+sudo cp kernel_build.sh /android_kernel_xiaomi_sweet/kernel_build.sh
 
 echo "Build"
 bash kernel_setup.sh
