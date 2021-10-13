@@ -6,7 +6,7 @@
 
 # Config
 DEVICE="sweet"
-DEFCONFIG="vendor/${DEVICE}_defconfig"
+DEFCONFIG="vendor/${DEVICE}_user_defconfig"
 LOG="$HOME/log.txt"
 
 # Export arch and subarch
