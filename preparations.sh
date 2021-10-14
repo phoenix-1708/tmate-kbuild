@@ -9,10 +9,10 @@ git config --global color.ui true
 echo "Setting up Environment"
 git clone https://github.com/akhilnarang/scripts bscripts && cd bscripts && bash setup/android_build_env.sh && cd ..
 
-echo "Cloning Sources"
+sudo echo "Cloning Sources"
 git clone https://github.com/AdarshGrewal/android_kernel_xiaomi_sweet.git -b lineage-18.1 && cd android_kernel_xiaomi_sweet
 
-echo "#!/bin/bash
+sudo echo "#!/bin/bash
 #
 # Copyright (c) 2021 CloudedQuartz
 #
