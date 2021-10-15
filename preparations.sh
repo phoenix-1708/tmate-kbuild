@@ -44,7 +44,7 @@ clone_tc
 clone_ak
 
 # Run build script
-. ${CURRENT_DIR}/kernel_build.sh" > /kernel_setup.sh
+. ${CURRENT_DIR}/kernel_build.sh" > kernel_setup.sh
 
 echo "#! /bin/bash
 # Copyright (C) 2020 KenHV
@@ -190,7 +190,7 @@ git am patches/0001-Revert-ARM64-dts-sweet-Decrease-physical-panel-dimen.patch
 build_setup
 build_config $DEFCONFIG
 build_kernel
-build_end ${DEVICE}_MIUI" >/kernel_build.sh
+build_end ${DEVICE}_MIUI" > kernel_build.sh
 
 echo "Build"
 bash kernel_setup.sh
