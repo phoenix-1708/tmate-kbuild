@@ -31,3 +31,4 @@ jobs:
     - run: source script-linux.sh
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@master
+      timeout-minutes: 60
