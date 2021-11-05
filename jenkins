@@ -1,19 +1,19 @@
 pipeline {
-    agent { label 'linux' }
+    agent { label 'master' }
     stages {
         stage('preparation') { 
             steps {
-                sh ./preparations.sh
+                sh './preparations.sh'
             }
         }
         stage('setup') { 
             steps {
-                sh ./kernel_setup.sh
+                sh './kernel_setup.sh'
             }
         }
         stage('Deploy') { 
             steps {
-                sh ./script-linux.sh
+                sh './script-linux.sh'
             }
         }
     }
