@@ -6,14 +6,14 @@ pipeline {
                 sh preparations.sh
             }
         }
-        stage('Test') { 
+        stage('setup') { 
             steps {
-                // 
+                sh kernel_setup.sh
             }
         }
         stage('Deploy') { 
             steps {
-                // 
+                sh script-linux.sh
             }
         }
     }
